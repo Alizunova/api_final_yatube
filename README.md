@@ -11,17 +11,17 @@ Django REST framework 3.12
   - git clone
   - cd api_yatube
 + Cоздать и активировать виртуальное окружение:
-- python -m venv env
-- source env/bin/activate
+  - python -m venv env
+  - source env/bin/activate
 + Установить зависимости из файла requirements.txt:
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+  - python -m pip install --upgrade pip
+  - pip install -r requirements.txt
 + Выполнить миграции:
-python manage.py migrate
+  - python manage.py migrate
 + Запустить проект:
-python manage.py runserver
+  - python manage.py runserver
 ## Примеры запросов к API:
- Неавторизированный пользователь
++ Неавторизированный пользователь
 
 <ins>Получить список всех публикаций.</ins>
 GET /api/v1/posts/
@@ -33,17 +33,17 @@ GET api/v1/posts/{id}/
 GET api/v1/posts/{post_id}/comments/
 <ins>Получить список групп.</ins>
 GET api/v1/groups/
-## Авторизированный пользователь
++ Авторизированный пользователь
 
-Добавление публикации.
+<ins>Добавление публикации.</ins>
 POST /api/v1/posts/
-Обновление публикации по id.
+<ins>Обновление публикации по id.</ins>
 POST /api/v1/posts/{id}/
-Удаление публикации по id.
+<ins>Удаление публикации по id.</ins>
 DELETE /api/v1/posts/{id}/
-Подписка на пользователя переданного в теле запроса.
+<ins>Подписка на пользователя переданного в теле запроса.</ins>
 POST /api/v1/follow/
-Получить список всех подписок на других пользователей.
-GET api/v1/follow/
-### Автор
+<ins>Получить список всех подписок на других пользователей.</ins>
+     GET api/v1/follow/
+## Автор
 Лизунова Анна
