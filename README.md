@@ -24,12 +24,20 @@
 + ### Неавторизированный пользователь
 
 <ins>Получить список всех публикаций.</ins>
+
+
 GET /api/v1/posts/
 <ins>При указании параметров limit и offset выдача производится постранично.</ins>
+
+
 GET /api/v1/posts/?limit=5&offset=3
 <ins>Получить публикацию по id.</ins>
+
+
 GET api/v1/posts/{id}/
 <ins>Получить все комментарии к публикации post_id.</ins>
+
+
 GET api/v1/posts/{post_id}/comments/
 <ins>Получить список групп.</ins>
 GET api/v1/groups/
