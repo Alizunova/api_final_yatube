@@ -35,7 +35,7 @@ GET api/v1/posts/{post_id}/comments/
 GET api/v1/groups/
 + ### Авторизированный пользователь
 
-<ins>Добавление публикации.</ins>\  
+<ins>Добавление публикации.\ </ins>
 POST /api/v1/posts/
 <ins>Обновление публикации по id.</ins>
 POST /api/v1/posts/{id}/
