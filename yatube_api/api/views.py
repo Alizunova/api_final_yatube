@@ -48,7 +48,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
 class CreateListViewSet(mixins.CreateModelMixin,
                         mixins.ListModelMixin,
                         viewsets.GenericViewSet):
-    '''Получение списка подписок, создание подписки.'''
+    """Получение списка подписок, создание подписки."""
 
 
 class FollowViewSet(CreateListViewSet):

@@ -12,11 +12,11 @@ v1_router.register(
     r"posts/(?P<post_id>\d+)/comments", CommentViewSet, basename="comments"
 )
 v1_router.register(r"follow", FollowViewSet, basename="follows")
-list = [
+pattern_list = [
     path("", include("djoser.urls")),
     path("", include("djoser.urls.jwt")),
     path("", include(v1_router.urls)),
 ]
 urlpatterns = [
-    path("v1/", include(list)),
+    path("v1/", include(pattern_list)),
 ]
